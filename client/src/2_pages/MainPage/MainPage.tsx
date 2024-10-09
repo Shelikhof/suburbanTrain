@@ -1,10 +1,11 @@
 import Description from "@/3_widgets/mainPage/Description";
 import MainListsWidget from "@/3_widgets/mainPage/MainListsWidget";
 import SearchWidget from "@/3_widgets/mainPage/SearchWidget";
+import Container from "@/6_shared/ui/Container";
 
 const MainPage = () => {
   return (
-    <div className="px-1 max-w-[1000px] m-auto">
+    <Container>
       <div className="md:mb-16 mb-8">
         <SearchWidget />
       </div>
@@ -12,7 +13,7 @@ const MainPage = () => {
         <MainListsWidget />
       </div>
       <Description />
-    </div>
+    </Container>
   );
 };
 
